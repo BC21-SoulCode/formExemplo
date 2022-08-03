@@ -1,0 +1,17 @@
+<template>
+	<lightning-card title="Nova Conta" icon-name="standard:record">
+        <div class="slds-m-around_medium">
+            <!-- 
+                Os names dos inputs devem ser identicos aos nomes de API da ORG - Ex: Name, Phone, Rating
+             -->
+
+			<!-- campo nome -->
+			<lightning-input type="text" label="Nome" name="Name" onchange={handleInputChange}></lightning-input>
+			<!-- campo de telefone -->
+			<lightning-input type="phone" label="Telefone" name="Phone" onchange={handleInputChange}></lightning-input>
+
+			<!-- botão -->
+			<lightning-button variant="brand" label="Salvar" onclick={handleOnClick} class="slds-m-left_x-small"></lightning-button>
+		</div>
+	</lightning-card>
+</template>
